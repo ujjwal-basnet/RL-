@@ -43,4 +43,18 @@ plt.imsave(path_final, final_image)
 
 ############# question 
 ## how many action we ahve ############ 
+print()
 print(f"we have {env.action_space.n} actions ")
+
+
+##### How many states do we have?
+print()
+print(f" we have {env.observation_space.n} states")
+
+## Is the environment deterministic or stochastic? 
+print()
+if env.spec.kwargs["is_slippery"]:
+    print("enviroment is stochastic  because is slippery is true")
+    
+else : 
+    print("enviroment is deterministic because slippery is false")
