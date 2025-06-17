@@ -39,3 +39,8 @@ for action in actions:
 # Save final state image
 final_image = env.render()
 plt.imsave(path_final, final_image)
+
+
+############# question 
+## how many action we ahve ############ 
+print(f"we have {env.action_space.n} actions ")
